@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: #F3F5FC;
+}
+
+.container {
+    margin: auto;
+    width: 1440px;
+    height: 1024px;
+    padding: 40px;
+    box-sizing: border-box; 
+    display: flex;
+}
+
+/* ### PRIMERA COLUMNA ### */
+.first-div {
+    width: 65%;
+    background-color: #F3F5FC; /* solo para visualización */
+}
+
+.logo {
+    margin-left: 44px;
+    margin-bottom: 80px;
+}
+
+.content {
+    margin-left: 150px;
+    margin-right: 40px;
+}
+
+.text-input {
+    background-color: #F3F5FC;
+    width: 90%;
+    height: 100%;
+    border: none;
+    outline: none;
+
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color: #0A3871;
+}
+
+.text-input::placeholder {
+    color: #0A3871;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+}
+
+.terms p {
+    padding-left: 8px;
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 12px;
+    color: #495057;
+    opacity: .8;
+}
+
+.img-term {
+    width: 16px;
+    height: 16px;
+}
+
+.btn-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.btn {
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    gap: 20px;
+    border-radius: 24px;
+    margin: 12px;
+    margin-left: 0;
+    border: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    
+}
+
+.btn.blue {
+    background-color: #0A3871;
+    color: #FFFFFF;
+    
+}
+
+.btn.gray {
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+}
+
+
+/* ### SEGUNDA COLUMNA ### */
+
+.second-div {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    width: 35%;
+    background-color: #FFFFFF;
+    justify-content: center;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.second-div .img {
+    width: 366px;
+    height: 304px;
+}
+
+.second-div .text-1 {
+    text-align: center;
+    color: #343A40;
+}
+
+.second-div .text-2 {
+    text-align: center;
+    color: #495057;
+}
+
+.text-hidden {
+    display: 1;
+}
+
+.text-show {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.text-container {
+    background-color: #FFFFFF;
+    width: 90%;
+    height: 100%;
+    margin: 13px;
+    border: none;
+    outline: none;
+
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color: #495057;
+}
+
+/* ### MEDIA QUERIES ### */
+
+@media (max-width: 768px) {
+    .container {
+        width: 768px;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .first-div {
+        width: 100%;
+        height: auto;
+    }
+
+    .logo {
+        margin: 0;
+        margin-bottom: 80px;
+    }
+
+    .content {
+        margin: 0px;
+        height: 100vw;
+    }
+
+    .text-input {
+        width: 588px;
+        height: 50%;
+    }
+
+    .second-div {
+        height: auto;
+        width: 85%;
+        align-items: center;
+    }
+
+    .second-div .img {
+        display: none;
+    }
+
+    .text-container {
+        max-height: 300px;
+        width: 588px;
+    }
+}
+
+@media (max-width: 375px) {
+    .container {
+        width: 100vw;
+        height: auto;
+        flex-direction: column;
+        padding: 24px;
+        gap: 10px;
+    }
+
+    .first-div {
+        width: 100%;
+        height: auto;
+        margin-bottom: 100px;
+    }
+
+    .logo {
+        margin: 0;
+        margin-bottom: 80px;
+    }
+
+    .content {
+        margin: 0px;
+        height: auto;
+        width: 310px;
+    }
+
+    .text-input {
+        width: 300px;
+        height: 60%;
+    }
+
+    .btn-left {
+        position: absolute;
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn {
+        margin: 10px;
+        width: 300px;
+    }
+
+    .second-div {
+        height: auto;
+        width: 260px;
+        padding: 32px;
+        margin-top: 100px;
+    }
+
+    .text-show .btn{
+        width: 270px;
+        height: 67px;
+    }
+
+    .text-container {
+        max-height: 400px;
+        width: 280px;
+    }
+}

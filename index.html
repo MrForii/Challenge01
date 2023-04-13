@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/main.js"></script>
+    <title>Challenge 01 - Oracle One</title>
+</head>
+<body>
+    <div class="container">
+        <div class="first-div">
+            <div class="logo">
+                <img src="./img/logo.png" alt="">
+            </div>
+            <div class="content">
+                <textarea name="texto" class="text-input" id="text" cols="30" rows="14" placeholder="Ingresa el texto aquí"></textarea>
+                <div class="terms">
+                    <img class="img-term" src="./img/terms.png" alt="terms">
+                    <p>Solo letras minúsculas y sin acentos</p>
+                </div>
+    
+                <div class="btn-left">
+                    <button class="btn blue" type="button" onclick="encriptar()">Encriptar</button>
+                    <button class="btn gray" type="button" onclick="desencriptar()">Desencriptar</button>
+                </div>
+            </div>
+            
+        </div>
+        <div class="second-div">
+            <div class="text-hidden" id="hidden">
+                <img class="img" src="./img/munieco.png" alt="Muñeco">
+                <h2 class="text-1">Ningún mensaje fue encontrado</h2>
+                <p class="text-2">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div class="text-show" id="show">
+                <textarea name="texto" class="text-container" id="text-2" cols="45" rows="17"></textarea>
+                <button class="btn gray" type="button" onclick="copiar()"> Copiar</button>
+            </div>
+            
+        </div>
+      </div>
+</body>
+</html>
